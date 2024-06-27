@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Les blagues de Chuck Norris</title>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+    <div class="text-center">
+        <h1 class="text-3xl font-bold mb-4">Chuck Norris Jokes</h1>
+        <img src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png" alt="Chuck Norris Logo" class="mx-auto mb-4">
+        <div id="joke-container" class="bg-white p-4 rounded shadow mb-4"></div>
+        <div class="flex justify-center space-x-4">
+            <button id="prev-btn" class="bg-orange-500 text-white px-4 py-2 rounded" disabled>Prev</button>
+            <button id="next-btn" class="bg-orange-500 text-white px-4 py-2 rounded">Next</button>
+        </div>
+        <div class="mt-4 flex justify-center space-x-4">
+            <select id="category-select" class="border p-2 bg-blue-500 rounded">
+                <option value="">Categories</option>
+            </select>
+            <button id="search-btn" class="bg-orange-500 text-white px-4 py-2 rounded">Rechercher</button>
+        </div>
+        <div class="mt-4 flex justify-center">
+            <button id="clear-btn" class="bg-red-500 text-white px-4 py-2 rounded">Effacer LS</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="useApi.js"></script>
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
